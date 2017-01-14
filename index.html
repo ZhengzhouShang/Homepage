@@ -2,9 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>大白</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        #box1{
+            width: 150px;
+            height: 110px;
+            background: white;
+            border: 1px solid white;
+            border-radius: 75px/55px;
+            z-index: 200;
+            box-shadow: .1px .1px 0.1px .1px lightgray,.1px .1px .1px .1px lightgray inset;
+            position: absolute;
+            top: 100px;
+            left: 406px;
+        }
+        #box2{
+            width: 190px;
+            height: 230px;
+            background: white;
+            border: 1px solid white;
+            border-top-left-radius: 90px 120px;
+            border-top-right-radius: 90px 120px;
+            border-bottom-left-radius: 73px 100px;
+            border-bottom-right-radius: 73px 100px;
+            box-shadow: .1px .1px 0.1px .1px lightgray,.1px .1px .1px .1px lightgray inset;
+            z-index: 100;
+            position: absolute;
+            top: 196px;
+            left: 384px;
+        }
+        #box3{
+            width: 66px;
+            height: 126px;
+            background: white;
+            border: 1px solid white;
+            border-bottom-left-radius: 30px 50px;
+            border-bottom-right-radius: 8px 12px;
+            box-shadow: 1px 1px 1px 1px lightgray,1px 1px 1px 1px lightgray;
+            position: absolute;
+            top: 380px;
+            left: 402px;
+
+        }
+        #box4{
+            width: 66px;
+            height: 126px;
+            background: white;
+            border: 1px solid white;
+            border-bottom-right-radius: 30px 50px;
+            border-bottom-left-radius: 8px 12px;
+            box-shadow: 1px 1px 1px 1px lightgray,1px 1px 1px 1px lightgray;
+            position: absolute;
+            top: 380px;
+            left: 488px;
+        }
+        #box5{
+            width: 70px;
+            height: 200px;
+            background: white;
+            border-radius: 33px/100px;
+            position: absolute;
+            top: 216px;
+            left: 324px;
+            /*旋转*/
+            transform: rotate(35deg);
+
+        }
+        #box6{
+            width: 70px;
+            height: 200px;
+            background: white;
+            border: 1px solid white;
+            border-radius: 33px/100px;
+            position: absolute;
+            top: 216px;
+            left: 556px;
+            /*旋转*/
+            transform: rotate(-35deg);
+
+        }
+        @keyframes dong{
+            /*0%{transform: rotateX(0deg);}
+            50%{transform: rotateX(60deg);}
+            100%{transform: rotateX(0deg);}*/
+            /*from{transform: rotateX(0deg);}
+            to{transform: rotateX(60deg);}*/
+            5%{transform: rotateX(60deg);}
+        }
+        #one{
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 10px;
+            position: absolute;
+            top: 38px;
+            left: 26px;
+            animation-name: dong;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #two{
+            width: 80px;
+            height: 3px;
+            background: black;
+            position: absolute;
+            top: 46px;
+            left: 26px;
+        }
+        #three{
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 10px;
+            position: absolute;
+            top: 38px;
+            left: 96px;
+            animation-name: dong;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #bai{
+            width: 30px;
+            height: 30px;
+            background: gray;
+            border-radius: 15px;
+            text-align: center;
+            line-height: 30px;
+            box-shadow: 1px 1px 1px 1px lightgray,1px 1px 1px 1px lightgray inset;
+            color: white;
+            position: absolute;
+            top: 44px;
+            left: 116px;
+        }
+
+
+    </style>
 </head>
 <body>
-<div>这是第一个测试</div>
+<div id="box1">
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</div>
+<div id="box2">
+    <div id="bai">白</div>
+</div>
+<div id="box3"></div>
+<div id="box4"></div>
+<div id="box5"></div>
+<div id="box6"></div>
 </body>
 </html>
